@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>Vasco Ramalho</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: 0px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center">
+  <a href="#" style="text-decoration:none">
+  <b>
+  VASCO
+  <br>
+  RAMALHO
+  </b>
+  </a>
+  </h3>
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#about" onclick="w3_close();deleteProject()" class="w3-bar-item w3-button">ABOUT MEEE</a> 
+  <a href="#contact" onclick="w3_close();deleteProject();" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#" onclick="w3_close();show()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+    <div id=project_index>   
+
+    </div>
+
+
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Vasco Ramalho</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div id="photo_grid" class="w3-row" style="background-color:white;">
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <!-- Project section -->
+  <div class="w3-container w3-center  w3-padding-32" style="background-color:white;"id="projects">
+      <h2 id="project_title"><b></b></h2>
+      <center>
+      <img id ="project_image" src="" alt="" class="w3-image w3-padding-32" onclick='onClick(this);' style='max-width:400px'>
+      <center>
+      <div class="w3-content w3-justify" style="max-width:600px">
+      <h4 id="project_sub_title"></h4>
+      <p id="project_text"></p>
+      </div>
+    </div>
+
+  <!-- About section -->
+  <div class=" w3-dark-grey w3-center w3-text-light-grey w3-padding-32"  id="about">
+    
+    <div class="w3-content w3-justify" style="max-width:600px;margin-bottom: 50px">
+      <h2><b>About Me</b></h2>
+      <h4>Who I am.</h4>
+      <p>
+        I was born in 1992 in Cascais, Portugal. From an early age I have started working on my grandfather’s workshop, where he passed me the passion for engineering and craftsmanship. Later on I would start studying Physics and Engineering in Lisbon (2010) and later go to Germany (2014) and the Netherlands (2016) to conclude my Masters in Physics.</p>
+      <p>
+        It was on a later stage that I developed a passion for Art and the will to combine a good technical knowledge with craftsmanship and aesthetic ambitions. This came from various experiences I had in various Artistic environments –  with my Pop band and all the design effort that went into it.
+      </p>
+
+    </div>
+    <img src="images/vasco.png" id="about_img" alt="Vasco Ramalho" align="left" width="100%" style="max-height:450px;margin-bottom: 50px">
+      
+    
+    <div class="w3-content w3-justify" style="max-width:600px;"> 
+      <hr class="w3-opacity">
+      <h3 class="w3-padding-16">Education</h3>
+      <p class="w3-wide">
+      Plasma Research Thesis 
+      <font color="#BFBCBC" size=1px> <br>Leiden Universiteit - Netherlands</font> </p>
+      <p>
+      <p class="w3-wide">
+      Master in Physics 
+      <font color="#BFBCBC" size=1px> <br> Ludwig Maximilian Universität - Germany</font></p>
+      <p class="w3-wide">
+      Master in Applied Engineering Physics 
+      <font color="#BFBCBC" size=1px> <br>Technische Universität München - Germany</font> </p>
+      <p>
+      <p class="w3-wide">
+      Bachelor in Engineering Physics 
+      <font color="#BFBCBC" size=1px> <br>University of Lisbon - Portugal</font> </p>
+      <p>
+      <a href="cv_ramalho.pdf">
+      <button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">CV - DOWNLOAD</button></a>
+      </p>
+
+      <hr class="w3-opacity">
+      <h3 class="w3-padding-16">Skills</h3>
+      <p class="w3-wide">
+      Painting Course
+      <font color="#BFBCBC" size=1px> <br>Leiden Universiteit - Netherlands</font> </p>
+      <p>
+      <p class="w3-wide">
+      Data Science in Python 
+      <font color="#BFBCBC" size=1px> <br> DataCamp </font></p>
+      <p class="w3-wide">
+      Metal Welding 
+      <font color="#BFBCBC" size=1px> <br>University of Lisbon - Portugal</font> </p>
+      <p>
+      <p class="w3-wide">
+      Theatre Course 
+      <font color="#BFBCBC" size=1px> <br>University of Munich - Germany</font> </p>
+      <p>
+
+      <hr class="w3-opacity">
+
+      <center style="margin-bottom: 9.5cm;margin-top: 7cm">  
+      <h3 id="contact" >Contact :</h4>
+      <h5>vascopcmr@gmail.com</h5>
+      <h5 >+351 912 805 348</h5>
+      </center>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+<script src="projects_text.js"></script>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function choseProject(project_name){
+  const x = project_name;
+  document.getElementById("project_title").textContent=x;
+  document.getElementById("project_image").style.display="block";
+  document.getElementById("project_image").src="images/"+x+".png";
+
+  document.getElementById("project_sub_title").innerHTML=project_texts[x][0];
+  document.getElementById("project_text").innerHTML=project_texts[x][1];
+  }
+
+function deleteProject(){
+  document.getElementById("project_title").textContent="";
+  document.getElementById("project_image").style.display="none";
+  document.getElementById("project_sub_title").textContent="";
+  document.getElementById("project_text").textContent="";
+  }  
+
+var it = 0;
+function show(){
+ if(it===0){
+      for(k in project_texts){
+      document.getElementById("project_index").innerHTML += 
+      "<a href='#projects' style='text-decoration:none'><li onclick='w3_close();choseProject("+"\`"+k+"\`"+");' class='w3-bar-item w3-button'><div align=left style='margin-left: 2.6cm;text-decoration:none;'><font style='font-size:60%;'>- "+k+"</font></div></li></a>";
+      }
+   it=1;
+ } else{document.getElementById("project_index").innerHTML = " "; it=0}
+}
+</script>
+
+<script>
+
+//Create Photo Grid Elements
+    for(k in project_texts){
+    document.getElementById("photo_grid").innerHTML +=
+    "<div class='w3-third'><div position = 'relative'><a href='#projects'><img src='images/"+k+".png' onmouseover='this.style.opacity=0.3;' onmouseout='this.style.opacity=1;' onclick='choseProject("+"\`"+k+"\`"+");show();' style='max-width:100%;height:auto;'></a><p position = 'absolute'><center><h5>"+k+"</h5></center></p></div></div>"; 
+    }
+
+</script>
+
+</body>
+</html>
+
