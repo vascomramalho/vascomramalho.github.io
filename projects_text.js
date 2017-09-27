@@ -28,7 +28,7 @@ const project_texts = {
     methods and its challenges.`],
 
      /*WRITE HERE PROJECT*/
-  'Wave Synthesiser Design': 
+  'Wave Synthesiser': 
   /*WRITE HERE PROJECT SUBTITLE*/
   ["Design of a Wave Synthesiser for a Laser Pulse.",
   /*WRITE HERE PROJECT TEXT*/
