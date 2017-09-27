@@ -7,7 +7,7 @@ const project_texts = {
   "Between September 2015 and July 2016 I did some research on Plasma Physics, at Leiden University. This project consisted in the attempt to visualize the theoretical prediction of magnetic fields in plasma with toroidal shapes. The studied plasma was a Laser Induced Plasma on a Helium chamber. For this I had to use multiple visualisation techniques such as Faraday Rotation, Interferometry and Spectroscopy. Through out this study many other questions raised regarding the origin itself of these rings, which provided the material for a study of the hydrodynamical effects of the initial stage of the laser induced plasma.During this project I developed many skills on electronics, programming, image analysis and abstract mathematics."],
   
    /*WRITE HERE PROJECT*/
-  'Analytic Mechanics Studies': 
+  'Analytic Mechanics': 
   /*WRITE HERE PROJECT SUBTITLE*/
   ["Numerical Simulation of Chain Fountain",
   /*WRITE HERE PROJECT TEXT*/
