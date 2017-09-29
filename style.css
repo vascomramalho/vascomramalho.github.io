@@ -208,3 +208,31 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-white,.w3-hover-border-white:hover{border-color:#fff!important}
 .w3-border-black,.w3-hover-border-black:hover{border-color:#000!important}
 .w3-border-grey,.w3-hover-border-grey:hover,.w3-border-gray,.w3-hover-border-gray:hover{border-color:#bbb!important}
+
+.relative { 
+   position: relative; 
+   max-width: 100%; /* for IE 6 */
+}
+.inside { 
+   position: absolute; 
+   bottom: 50%;     
+}
+.im_style{width:100%;}
+
+
+.button_slide {
+	background-color:#b3afb3;
+	border:1px solid #524d52;
+	display:inline-block;
+	cursor:pointer;
+	color:#575757;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+.button_slide:hover {
+	background-color:#362f36;
+}
+

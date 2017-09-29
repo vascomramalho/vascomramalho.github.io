@@ -69,7 +69,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-container w3-center  w3-padding-32" style="background-color:white;"id="projects">
       <h2 id="project_title"><b></b></h2>
       <center>
-      <img id ="project_image" src="" alt="" class="w3-image w3-padding-32" onclick='onClick(this);' style='max-width:400px'>
+
+      <div id="my_slide_show"; style='max-width:400px'> </div>
+
       <center>
       <div class="w3-content w3-justify" style="max-width:600px">
       <h4 id="project_sub_title"></h4>
@@ -136,8 +138,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <font color="#BFBCBC" size=1px> <br>University of Munich - Germany</font> </p>
       <p>
 
-      
-
       <center  style="margin-bottom: 13cm;">  
       <hr class="w3-opacity" id="contact" style="margin-bottom: 6cm">
       <h3>Contact :</h3>
@@ -147,7 +147,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-
+</body>
 
 <!-- End page content -->
 </div>
@@ -176,9 +176,8 @@ function onClick(element) {
 function choseProject(project_name){
   const x = project_name;
   document.getElementById("project_title").textContent=x;
-  document.getElementById("project_image").style.display="block";
-  document.getElementById("project_image").src="images/"+x+".png";
-
+  
+  slide(project_texts[x][2],"my_slide_show");   
   document.getElementById("project_sub_title").innerHTML=project_texts[x][0];
   document.getElementById("project_text").innerHTML=project_texts[x][1];
   }
@@ -200,18 +199,17 @@ function show(){
    it=1;
  } else{document.getElementById("project_index").innerHTML = " "; it=0}
 }
-</script>
-
-<script>
 
 //Create Photo Grid Elements
     for(k in project_texts){
     document.getElementById("photo_grid").innerHTML +=
     "<div class='w3-third'><div position = 'relative'><a href='#projects'><img src='images/"+k+".png' onmouseover='this.style.opacity=0.3;' onmouseout='this.style.opacity=1;' onclick='choseProject("+"\`"+k+"\`"+");show();' style='max-width:100%;height:auto;'></a><p position = 'absolute'><center><h5>"+k+"</h5></center></p></div></div>"; 
     }
-
 </script>
 
-</body>
+<!--Slide Show -->
+<script src="slide_show.js"></script>
+
+
 </html>
 
