@@ -62,7 +62,7 @@ const project_texts = {
     ],
 
 'Os Capitães da Areia': 
-  /*WRITE HERE PROJECT SUBTITLE*/
+  /*WRITE HERE PROJECT SUB TITLE*/
   ["Composer and Musician for a Pop Band ",
   /*WRITE HERE PROJECT TEXT*/
     `Founder of the Portuguese pop band – Os Capitães da 
