@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+.relative { 
+   position: relative; 
+   max-width: 100%; /* for IE 6 */
+}
+.inside { 
+   position: absolute; 
+   top: 0px;     
+}
+.im_style{width:100%;}
+</style>
+
+<body>
+
+<button onclick="slide(img_array,'slide_show_div')">Create</button>
+
+<div id="slide_show_div"></div>
+
+
+
+</body>
+
+
+<script>
+var img_array = ["vasco.png","Analytic Mechanics Studies.png","default.png"]
+var it = 0;
+function slide(imarray,div_id){
+//Just need to provide the "image files path array" and provide the "division id" to place the slide show 
+function change_image_plus(element_id)
+		{
+			document.getElementById(element_id).src = img_array[it];
+			it+=1;
+			if(it===img_array.length)
+				it=0;
+		}
+function change_image_minus(element_id)
+		{
+			document.getElementById(element_id).src = img_array[it];
+			it-=1;
+			if(it===-1)
+				it=img_array.length-1;
+		}	
+
+	var div = document.getElementById(div_id);
+		div.innerHTML = ''
+		div.className = "relative";
+
+	var im = document.createElement('IMG');
+		im.src=imarray[it];
+		im.id="slide_image";
+		im.className="im_style";
+	var bu_plus=document.createElement('BUTTON');
+		
+	    bu_plus.innerHTML="<font size=30px> > </font>"
+	    
+	    bu_plus.className="inside";
+	    bu_plus.style="right:0px";
+	    bu_plus.addEventListener("click", function (){
+	    change_image_plus("slide_image")
+	});
+
+	var bu_minus=document.createElement('BUTTON');
+	    bu_minus.innerHTML="<font size=30px> < </font>";
+	    bu_minus.className="inside";
+	    bu_minus.style="left:0px";
+	    bu_minus.addEventListener("click", function (){
+	    change_image_minus("slide_image")
+	});
+
+	div.appendChild(bu_plus);
+	div.appendChild(bu_minus);
+	div.appendChild(im);
+}
+
+
+</script>
+</html>
+
+

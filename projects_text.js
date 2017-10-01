@@ -17,7 +17,7 @@ const project_texts = {
     I developed many skills on electronics, programming, image analysis and 
     abstract mathematics.`,
     //Array with images
-    ["images/Plasma Physics Research.png","images/Analytic Mechanics Studies.png","images/vasco.png"]
+    ["images/Plasma Physics Research.png","images/Plasma Physics Research 2.png","images/Plasma Physics Research 3.png"]
     ],
   
    /*WRITE HERE PROJECT*/
@@ -41,7 +41,7 @@ const project_texts = {
     insightful work that allowed me to develop some insight on numerical 
     methods and its challenges.`,
     //Array with images
-    ["images/Analytic Mechanics Studies.png"]
+    ["images/Analytic Mechanics Studies.png", "images/Analytic Mechanics Studies 1.png"]
     ],
 
      /*WRITE HERE PROJECT*/
@@ -58,7 +58,7 @@ const project_texts = {
     end both channels would be combined to achieve the final pulse, combined
     both in space and time. This work was done under the supervision of Dr. Martin Shultze.`
     ,
-    ["images/Wave Synthesiser.png","images/Wave Synthesiser.png"]
+    ["images/Wave Synthesiser.png","images/Wave Synthesiser 1.png","images/Wave Synthesiser 2.png"]
     ],
 
 'Os Capitães da Areia': 
@@ -74,8 +74,76 @@ const project_texts = {
     “A Viagem dos Capitães da Areia a bordo do 
     Apolo 70”`,
     //Array with images
-    ["images/Os Capitães da Areia.png","images/Os Capitães da Areia.png"]
+    ["images/Os Capitães da Areia.png","images/Os Capitães da Areia 1.png"]
     ],
+
+
+    'Portugal China Relations': 
+  /*WRITE HERE PROJECT SUBTITLE*/
+  ["Trading Platform between Portuguese Speaking Countries and China",
+  /*WRITE HERE PROJECT TEXT*/
+    `During the year of 2017 I worked between China 
+    and Portugal developing commercial and diplomatic 
+    relations between both countries. With AJEPC – Portugal 
+    China Young Entrepreneurs Association – I travelled through 
+    the main cities of China in to attend events and meeting that 
+    would enhance the image of Portugal in China. From all these 
+    trips I can highlight a 3 months mission I did in Chongqing, 
+    where I organised a cultural event that intended to show the 
+    Portuguese culture to the city.
+
+It was a very enlightening experience in the overall, since I truly 
+experienced the cultural shock on a work environment and on a daily 
+routine. It helped me to conceptualise the world on a truly global frame 
+and to understand better its economic dynamics.
+
+Also, while in chongqing I developed a Market study about that Municipality, 
+exploring its pros and cons for enterprises that want to expand to one of the 
+fastest urban commercial regions in the world.`,
+    //Array with images
+    ["images/Portugal China Relations.png","images/Portugal China 1.png","images/Portugal China 2.png","images/Portugal China 3.png","images/Portugal China 4.png"]
+    ],
+
+'Laboratory Automation': 
+/*WRITE HERE PROJECT SUBTITLE*/
+["Using Microprocessors to control Lab Equipment",
+/*WRITE HERE PROJECT TEXT*/
+`In 2013 I worked for 3 months in the Solid State Laboratory 
+of the Instituto Superior Técnico doing the automation of the 
+experimental set-up. My work consisted on the construction of 
+automated rotation stage and a data acquisition system. This work 
+involved setting up transducers and a control system (using microprocessors 
+and some integrated circuits). This work gave me a lot insight into 
+computer external communications and the implementation of amplification 
+circuits and relay circuits.`,
+//Array with images
+["images/Laboratory Automation.png"]
+],
+
+
+'Architecture Interests': 
+/*WRITE HERE PROJECT SUBTITLE*/
+["",
+/*WRITE HERE PROJECT TEXT*/
+`Architecture is one of my main passions.
+ I even started studying architecure after finishing my Masters in Physics.
+  But now I have it as a hobby subject, which I develop in parallel.`,
+//Array with images
+["images/Architecture Interests.png","images/Architecture Studies 2.png",
+"images/Architecture Studies 3.png","images/Architecture Studies 4.png",
+"images/Architecture Studies 5.png", "images/Architecture Studies 6.png"]
+],
+
+'Drawing and Painting': 
+/*WRITE HERE PROJECT SUBTITLE*/
+["Learning of Drawing and Painting Techniques.",
+/*WRITE HERE PROJECT TEXT*/
+`I have been exploring different drawing/painting 
+techniques and expression aesthetics.`,
+//Array with images
+["images/Drawing and Painting.png","images/Drawing and Painting 1.png","images/Drawing and Painting 2.png","images/Drawing and Painting 3.png","images/Drawing and Painting 4.png"]
+],
+
 
 
 
