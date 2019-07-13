@@ -121,7 +121,22 @@ circuits and relay circuits.`,
 ],
 
 
+'Architecture Interests': 
+["",
+`Architecture is one of my main passions.
+ I even started studying architecure after finishing my Masters in Physics.
+  But now I have it as a hobby subject, which I develop in parallel.`,
+["images/Architecture Interests.png","images/Architecture Studies 2.png","images/Architecture Studies 3.png","images/Architecture Studies 4.png","images/Architecture Studies 5.png", "images/Architecture Studies 6.png"]
+],
 
+'Drawing and Painting': 
+["Learning of Drawing and Painting Techniques.",
+`I have been exploring different drawing/painting 
+techniques and expression aesthetics.`,
+
+["images/Drawing and Painting.png","images/Drawing and Painting 1.png","images/Drawing and Painting 2.png","images/Drawing and Painting 3.png","images/Drawing and Painting 4.png"]
+]
+,
 
 
 
